@@ -12,6 +12,7 @@ import {
   updateAlertManagerConfigAction,
   createOrUpdateSilenceAction,
   fetchFolderAction,
+  checkIfLotexSupportsEditingRulesAction,
 } from './actions';
 
 export const reducer = combineReducers({
@@ -34,6 +35,11 @@ export const reducer = combineReducers({
   amAlerts: createAsyncMapSlice('amAlerts', fetchAmAlertsAction, (alertManagerSourceName) => alertManagerSourceName)
     .reducer,
   folders: createAsyncMapSlice('folders', fetchFolderAction, (uid) => uid).reducer,
+  lotexSupportsRuleEditing: createAsyncMapSlice(
+    'lotexSupportsRuleEditing',
+    checkIfLotexSupportsEditingRulesAction,
+    (source) => source
+  ).reducer,
 });
 
 export type UnifiedAlertingState = ReturnType<typeof reducer>;
