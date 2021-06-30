@@ -27,8 +27,9 @@ func generateTypeScriptFromCUE(dest string, p load.BaseLoadPaths) error {
 	}
 
 	for panelName, panelSchema := range panelSchemaMap {
-		inst, _ := panelSchema.CUE().Reference()
-		b, err := encoder.Generate(inst, encoder.Config{})
+		got := fmt.Sprintf("%+v", panelSchema.CUE())
+		fmt.Println("<<<<<<<<<<", got)
+		b, err := encoder.Generate(panelSchema.CUE(), encoder.Config{})
 		if err != nil {
 			return err
 		}
@@ -42,7 +43,6 @@ func writeTypeScriptFiles(dest string, content string) error {
 	if err != nil {
 		return err
 	}
-
 	fmt.Fprint(fd, content)
 	return nil
 }

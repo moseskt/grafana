@@ -14,10 +14,7 @@ func TestCuetsyBasics(t *testing.T) {
 			DistPluginCueFS: defaultBaseLoadPaths.DistPluginCueFS,
 		}
 
-		err := generateTypeScriptFromCUE("testdata/", baseLoadPaths, load.BaseDashboardFamily)
-		require.NoError(t, err, "error while generating base dashboard scuemata")
-
-		err = generateTypeScriptFromCUE("testdata/", baseLoadPaths, load.DistDashboardFamily)
-		require.NoError(t, err, "error while generating dist dashboard scuemata")
+		err := generateTypeScriptFromCUE("testdata/panelts", baseLoadPaths)
+		require.NoError(t, err, "error while generating type script from panel scuemata")
 	})
 }

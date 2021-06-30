@@ -1634,8 +1634,8 @@ github.com/satori/go.uuid v1.2.0/go.mod h1:dA0hQrYB0VpLJoorglMZABFdXlWrHn1NEOzdh
 github.com/satori/go.uuid v1.2.1-0.20181028125025-b2ce2384e17b/go.mod h1:dA0hQrYB0VpLJoorglMZABFdXlWrHn1NEOzdhQKdks0=
 github.com/scaleway/scaleway-sdk-go v1.0.0-beta.7.0.20210223165440-c65ae3540d44/go.mod h1:CJJ5VAbozOl0yEw7nHB9+7BXTJbIn6h7W+f6Gau5IP8=
 github.com/schollz/closestmatch v2.1.0+incompatible/go.mod h1:RtP1ddjLong6gTkbtmuhtR2uUrrJOpYzYRvbcPAid+g=
-github.com/sdboyer/cuetsy v0.0.0-20210420020651-faf3a22d66e2 h1:si21Hn3aelpBDscf9sBHycFY8Vz3dvNWp0vbMX59Qg8=
-github.com/sdboyer/cuetsy v0.0.0-20210420020651-faf3a22d66e2/go.mod h1:I2mf/5S9OQjSxoYUQC+Vigy3x2ZBUKYoohn0pMEwztw=
+github.com/sdboyer/cuetsy v0.0.0-20210701144241-726b748a6db6 h1:1ly7QpV7xFQHr7nJtwTVlAxQcKYQ/zOm5aiJMl07fNE=
+github.com/sdboyer/cuetsy v0.0.0-20210701144241-726b748a6db6/go.mod h1:I2mf/5S9OQjSxoYUQC+Vigy3x2ZBUKYoohn0pMEwztw=
 github.com/sean-/seed v0.0.0-20170313163322-e2103e2c3529 h1:nn5Wsu0esKSJiIVhscUtVbo7ada43DJhG55ua/hjS5I=
 github.com/sean-/seed v0.0.0-20170313163322-e2103e2c3529/go.mod h1:DxrIzT+xaE7yg65j358z/aeFdxmN0P9QXhEzd20vsDc=
 github.com/securego/gosec v0.0.0-20200203094520-d13bb6d2420c/go.mod h1:gp0gaHj0WlmPh9BdsTmo1aq6C27yIPWdxCKGFGdVKBE=
