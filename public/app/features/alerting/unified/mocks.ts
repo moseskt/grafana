@@ -104,7 +104,7 @@ export const mockPromRuleNamespace = (partial: Partial<RuleNamespace> = {}): Rul
 };
 
 export class MockDataSourceSrv implements DataSourceSrv {
-  private datasources: Record<string, DataSourceApi> = {};
+  datasources: Record<string, DataSourceApi> = {};
   // @ts-ignore
   private settingsMapByName: Record<string, DataSourceInstanceSettings> = {};
   private settingsMapByUid: Record<string, DataSourceInstanceSettings> = {};
@@ -114,9 +114,10 @@ export class MockDataSourceSrv implements DataSourceSrv {
     getVariables: () => [],
     replace: (name: any) => name,
   };
-  private defaultName = '';
+  defaultName = '';
 
   constructor(datasources: Record<string, DataSourceInstanceSettings>) {
+    this.datasources = {};
     this.settingsMapByName = Object.values(datasources).reduce<Record<string, DataSourceInstanceSettings>>(
       (acc, ds) => {
         acc[ds.name] = ds;
